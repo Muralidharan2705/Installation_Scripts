@@ -54,3 +54,17 @@ Then, you can run the script using:
  the container's bash shell:
  exit
 
+**Install SonarQube**
+1. Install docker
+./install_docker.sh
+2. Create Sonarqube Docker container
+ To run SonarQube in a Docker container with the provided command, you can follow
+ these steps:
+ 1.
+ Open your terminal or command prompt.
+ 2. Runthe following command:
+ docker run-d--name sonar-p 9000:9000 sonarqube:lts-community
+ This command will download the sonarqube:lts-community Docker image from Docker
+ Hub if it's not already available locally. Then, it will create a container named "sonar"
+from this image, running it in detached mode (-d flag) and mapping port 9000 on the
+ host machine to port 9000 in the container (-p 9000:9000 flag).
